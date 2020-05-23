@@ -20,7 +20,6 @@ def get_angle_btween_sides(adjacent, opposite, hypotenuse):
     """
     ao_angle = None
     ho_angle = None
-    ah_angle = None
     
     ao_angle = round(math.degrees(math.acos((math.pow(adjacent, 2) + math.pow(opposite, 2) - math.pow(hypotenuse, 2)) / (2 * adjacent * opposite))), 2)
 
@@ -38,7 +37,7 @@ def draw(adjacent, opposite, hypotenuse, ao_angle, ho_angle, start_x=0, start_y=
     :ao_angle: inner angle of the adjacent and opposite
     :ho_angle: inner angle of the hypotenuse and opposite
     :start_x: position to start on the X axis
-    :start_y: opposite to start on the Y axis
+    :start_y: position to start on the Y axis
     """
     # Initialize turtle instance
     t = turtle.Turtle()
